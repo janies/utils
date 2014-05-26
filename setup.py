@@ -18,13 +18,9 @@ setup(
     package_dir = {'': 'src'},
     packages = find_packages('src', exclude=['jjutils.tests',
                                              'jjutils.tests.*']),
-    install_requires = [ #"librsync",
+    install_requires = [
                          "requests",
-                         "feedparser",
                          "ijson",
-                         #"pysync",
                        ],
-    entry_points = {"console_scripts":
-                    ['utils:utils']},
-    test_suite = "utilss.tests",
+    test_suite = "jjutils.tests",
 )
